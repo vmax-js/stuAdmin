@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [10,11,12,13];
+        //数组每一项 对应的索引 数组自己
+        arr.forEach(function(ele,index,self){
+            console.log(ele,index,self);
+        })
+        var obj = {
+            name: 'tan',
+            age: '23'
+        }    
+        //属性 属性值
+        for( var prop in obj){
+            console.log(prop, obj[prop]);
+        }
+        
+        
+    </script>
+</body>
+</html>

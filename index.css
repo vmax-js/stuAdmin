@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.header {
+    height: 70px;
+    /* 文字居中对齐 */
+    line-height: 70px;
+    background-color: #354457;
+}
+.logo {
+    padding-left: 20px; 
+    /* 改变字体颜色 */
+    color: #b3bcc5;
+    /* 字体大小 */
+    font-size: 14px;
+}
+.logo img {
+    width: 30px;
+    height: 30px;
+    /* 沿中线对齐 */
+    vertical-align: middle;
+}
+.left-menu {
+    width: 200px;
+    /* calc 用于不同单位的计算  格式如下 减号两边要加空格*/
+    height: calc(100% - 70px);
+    /* 让它和right-content在一行 */
+    float: left;
+    background-color: #4d5e70;
+}
+.right-content {
+    /* 让它和right-content在一行 */
+    float: left;
+    width: calc(100% - 200px);
+    height: calc(100% - 70px);
+    background-color: #eee;
+    position: relative;
+}
+.left-menu dl dd , .left-menu dl dt {
+    height: 40px;
+    line-height: 40px;
+    color: #b3bcc5;
+    font-size: 14px;
+}
+.left-menu dl dd {
+    padding-left: 20px;
+}
+.left-menu dl dt {
+    padding-left: 10px;
+}
+.left-menu dl dd:hover {
+    background-color: rgba(255,255,255,0.5);
+    color: #354457;
+}
+.left-menu dl dd.active {
+    background-color: #ddd;
+    color: #354457;
+}
+.student-list table {
+    width: 100%;
+    /* 文本居中 */
+    text-align: center;
+}
+.student-list table thead {
+    background-color: #e3e8ee;
+    color: #000;
+    height: 34px;
+    line-height: 34px;
+}
+.student-list table tbody {
+    background-color: #fff;
+    line-height: 30px;
+    color: rgb(90, 90, 90);
+}
+.btn {
+    border: none;   
+    /* outline 点击出现的边框 */
+    outline: none;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+
+ }
+.edit.btn  {
+    background-color: #5cb85c;
+    border-radius: 10%;
+ }
+.del.btn {
+     background-color: #d9534f;
+     border-radius: 10%;
+ }  
+.turn-page {
+    text-align: center;
+    
+}
+.turn-page .btn{
+    color: rgb(90, 90, 90);
+    display: none;
+}
+.student-list{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* display: none; */
+}
+form {
+    width: 400px;
+    margin:50px auto;
+}
+form label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+form label.sex{
+    width: auto;
+}
+form div  {
+    padding: 10px 0px;
+}
+form .btn{
+   padding: 5px 15px;
+    color: rgb(90, 90, 90);
+    background-color: #eee;
+    border: 1px solid #354457;
+
+}
+
+
+.right-content > div {
+    display: none;
+}
+.right-content > div.active {
+    display: block;
+}
+
+.model {
+    position: fixed;
+    /* width: 100%;
+    height: 100%; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.model .model-content {
+    width: 500px;
+    height: 450px;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -250px;
+}
+.model .model-content .btn {
+    padding: 3px 57px;
+}
